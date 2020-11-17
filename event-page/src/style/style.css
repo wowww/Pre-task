@@ -1,0 +1,35 @@
+.wrap {
+  background-size: cover;
+  background-image: url(../images/background.jpg);
+}
+
+header {
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.header-aria {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contents-aria {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.pos-ab {
+  position: absolute;
+}
+
+.logo {
+  width: 100px;
+  height: 20px;
+  background-image: url(../images/KakaoPay-remittance.png);
+  background-size: 100px auto;
+}
+
+.header-image {
+  top: 0;
+  right: 0;
+}
