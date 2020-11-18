@@ -298,7 +298,6 @@ header {
   position: absolute;
   left: 16px;
   content: 'ㆍ';
-  
 }
 
 .prize-notice {
@@ -319,6 +318,90 @@ header {
   .personnel { 
     font-size: 13px;
   } 
+}
+
+.spark-show {
+  animation-name: spark;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: all ease-in-out; /* custom */
+  transform: scale(1);
+  padding-top: 10.7%;
+  transform: scale(0.4);
+}
+
+@keyframes spark {
+  0% {
+    padding-top: 10.7%;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.drop-the {
+  animation: dropthe 1s 1s infinite alternate;
+}
+
+@keyframes dropthe {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.money:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-image: url(../images/money-o.png);
+  animation: money-o 1.1s 1.1s infinite alternate;
+}
+
+.money {
+  animation: dropthe 2.7s 1.5s infinite alternate;
+}
+
+@keyframes money {
+  0% {
+    opacity: 0.1;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  60% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes money-o {
+  0% {
+    opacity: 0.3;
+  }
+  
+  25% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .popup {
