@@ -278,6 +278,7 @@ header {
 .precaution {
   padding-bottom: 50%;
   color: rgba(255,255,255,0.5);
+  font-size: 13px;
 }
 
 .precaution h2 {
@@ -310,4 +311,12 @@ header {
   position: absolute;
   left: -0px;
   content: '-';
+}
+
+@media screen and (max-width: 400px) {
+  .reward-title,
+  .reward-box p,
+  .personnel { 
+    font-size: 13px;
+  } 
 }
