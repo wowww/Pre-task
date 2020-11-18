@@ -51,6 +51,12 @@ img {
   display: block;
 }
 
+button {
+	outline: 0;
+	border: 0 none;
+	background: transparent;
+}
+
 .pos-ab {
   position: absolute;
 }
