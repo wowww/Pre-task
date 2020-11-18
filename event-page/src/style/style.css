@@ -320,3 +320,82 @@ header {
     font-size: 13px;
   } 
 }
+
+.popup {
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+.popup-button {
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
+}
+
+.popup-button img {
+  width: 100%;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.modal .close {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 27%;
+}
+
+.close img {
+  width: 100%;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.97);
+}
+
+.modal-top,
+.modal-bottom {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+}
+
+.modal-top {
+  background-image: url(../images/popup-top.png);
+  border-bottom: 3px solid rgba(92, 35, 23, 0.6);
+}
+
+.modal-bottom {
+  background-image: url(../images/popup-bottom.png);
+  border-top: 3px solid rgba(233, 233, 233, 0.2);
+}
+
+.modal-top img,
+.modal-bottom img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.modal-top img {
+  bottom: 20px;
+}
+
+.modal-bottom img {
+  top: 20px;
+}
