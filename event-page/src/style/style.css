@@ -9,8 +9,53 @@ header {
 }
 
 .header-aria {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  border-bottom: 1px solid rgba(150,125,139,0.4);
+}
+
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo-image {
+  display: block;
+  width: 50px;
+  height: 10px;
+  background-image: url(../images/KakaoPay-remittance.png);
+  background-size: 50px auto;
+}
+
+.header-text {
+  top: 8px;
+  right: 110px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.header-text span {
+  opacity: 0.6;
+}
+
+.header-text strong {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.header-image {
+  top: 0;
+  right: 0;
+  width: 112px;
+}
+
+.header-image img {
+  width: 100%;
+}
+
+.contents {
+  width: 100%;
+  
 }
 
 .contents-aria {
@@ -18,18 +63,108 @@ header {
   padding-left: 20px;
 }
 
-.pos-ab {
-  position: absolute;
+.neon {
+  padding-bottom: 66%;
 }
 
-.logo {
-  width: 100px;
-  height: 20px;
-  background-image: url(../images/KakaoPay-remittance.png);
-  background-size: 100px auto;
+.electric-sign {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-.header-image {
-  top: 0;
-  right: 0;
+.electric-sign img {
+  display: block;
+  width: 100%;
+}
+
+.electric-sign .spark {
+  padding-top:1%;
+  left: 50%;
+  width: 50%;
+  margin-left: -39%;
+  z-index: 2;
+}
+
+.electric-sign .spark img {
+  width: 50%;
+  height: auto;
+}
+
+.drop-the,
+.money {
+  width: 100%;
+}
+
+.drop-the {
+  padding-top: 10%;
+}
+
+.money {
+  padding-top: 20%;
+}
+
+.cash-text {
+  width: 70%;
+  left: 50%;
+  margin-left: -35%;
+  padding-top: 50%;
+}
+
+.prize {
+  position: relative;
+}
+
+.g-money {
+  padding-left: 4%;
+}
+
+.total-cash {
+  margin-left: 50%;
+  top: 78%;
+  left: -34%;
+  width: 50%;
+}
+
+.finger { 
+  width: 32%;
+}
+
+.finger.left {
+  left: 0;
+}
+
+.finger.right {
+  margin-top: -5%;
+  right: -37%;
+  transform: rotateY(180deg);
+}
+
+.total-money {
+  width: 71%;
+  left: 33%;
+  margin-top: -4%;
+}
+
+.g-money img,
+.finger img,
+.total-money img {
+  width: 100%;
+}
+
+.reward {
+  padding-top: 6%;
+  text-align: center;
+}
+
+.reward-title {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.reward-title strong {
+  font-weight: 700;
 }
