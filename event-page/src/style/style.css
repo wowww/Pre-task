@@ -20,6 +20,13 @@ header {
 }
 
 .logo-image {
+  text-indent: -9999px;
+  width: 1px;
+  height: 0px;
+  color: transparent;
+}
+
+.logo-image {
   display: block;
   width: 50px;
   height: 10px;
@@ -40,7 +47,7 @@ header {
 
 .header-text strong {
   opacity: 1;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .header-image {
@@ -153,18 +160,154 @@ header {
 }
 
 .reward {
+  position: relative;
   padding-top: 6%;
   text-align: center;
 }
 
 .reward-title {
-  display: inline-block;
-  padding: 5px 10px;
-  color: #000;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 7px 18px 5px;
+  color: #c88640;
+  border: 1px solid #8e6232;
   border-radius: 20px;
+  background-color: rgba(0,0,0,0.9);
 }
 
 .reward-title strong {
   font-weight: 700;
+}
+
+.reward-title span {
+  padding-left: 6px;
+}
+
+.reward-box {
+  padding: 20px;
+  color: #c88640;
+  font-weight: 400;
+  border: 1px solid #8e6232;
+  border-radius: 6px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.reward-box p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #8e6232;
+}
+
+.reward-box ul {
+  display: flex;
+  padding: 20px 0 0;
+}
+
+.reward-box ul li {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.prize-image {
+  width: 100%;
+}
+
+.prize-image img {
+  width: 100%;
+}
+
+.reward-box .personnel {
+  padding-top: 10px;
+}
+
+.reward-box .personnel span {
+  padding-right: 2px;
+}
+
+.social {
+  position: relative;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.social-bg {
+  position: relative;
+  width: 100%;
+}
+
+.social-bg-frame {
+  z-index: 1;
+}
+
+.social-bg img,
+.social-bg-frame img,
+.social-icons img {
+  width: 100%;
+  height: auto;
+}
+
+.social-icons .kakaotalk img,
+.social-icons .twitter img {
+  width: 120%;
+}
+
+.social-icons {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  padding: 3%;
+  transform: translateY(-40%);
+}
+
+.social-icons a {
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.coin-bg {
+  width: 100%;
+}
+
+.coin-bg img {
+  width: 100%;
+}
+
+.precaution {
+  padding-bottom: 50%;
+  color: rgba(255,255,255,0.5);
+}
+
+.precaution h2 {
+  padding: 20px 0;
+  font-weight: 700;
+}
+
+.precaution ul {
+  padding-left: 10px;
+}
+
+.precaution ul li {
+  margin-bottom: 10px;
+}
+
+.precaution > ul > li:before {
+  position: absolute;
+  left: 16px;
+  content: 'ㆍ';
+  
+}
+
+.prize-notice {
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+.prize-notice > li:before {
+  position: absolute;
+  left: -0px;
+  content: '-';
 }
