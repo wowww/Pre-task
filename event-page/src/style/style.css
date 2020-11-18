@@ -62,7 +62,6 @@ header {
 
 .contents {
   width: 100%;
-  
 }
 
 .contents-aria {
@@ -120,6 +119,7 @@ header {
 
 .prize {
   position: relative;
+  margin-bottom: 8%;
 }
 
 .g-money {
@@ -144,7 +144,6 @@ header {
 .finger.right {
   margin-top: -5%;
   right: -37%;
-  transform: rotateY(180deg);
 }
 
 .total-money {
@@ -162,6 +161,7 @@ header {
 .reward {
   position: relative;
   padding-top: 6%;
+  margin-bottom: 8%;
   text-align: center;
 }
 
@@ -352,6 +352,28 @@ header {
   100% {
     opacity: 1;
   }
+}
+
+.total-money {
+  animation: size 0.4s 1s infinite alternate ease-in-out;
+}
+
+@keyframes size {
+  30% {
+    transform: scale(1.12);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.finger.left {
+  
+}
+
+.finger.right {
+  transform: rotateY(180deg);
 }
 
 .money:before {
