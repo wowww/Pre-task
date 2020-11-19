@@ -81,41 +81,91 @@ header {
   position: absolute;
  }
 
-.coin01,
-.coin03 {
-  left: 0;
-}
+ .view-coin {
+   /* width: 100%; */
+ }
 
 .coin01 {
-  top: 7%;
+  top: 9%;
+    left: -2%;
+    padding-bottom: 31%;
+    width: 13%;
 }
 
 .coin02 {
-  top: 18%;
+  top: 18.7%;
   left: 15%;
+  padding-bottom: 13%;
+  width: 10%;
 }
 
 .coin03 {
   top: 25%;
+  left: 0;
+  padding-bottom: 13%;
+  width: 100%;
 }
 
 .coin04 {
-  top: 17%;
-  right: 1%;
+  top: 18%;
+  right: 6%;
+  padding-bottom: 13%;
+  width: 9%;
 }
 
 .coin05 {
   top: 14%;
-  right: -13%;
+  right: 0%;
+  padding-bottom: 23%;
+  width: 17%;
 }
 
 .coin06 {
-  top: 25%;
-  right: -15%;
+  top: 23%;
+  right: -9%;
+  padding-bottom: 28%;
+  width: 25%;
 }
 
-#coin div img {
-  width: 50%;
+.view-coin .coin-img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coin01 .coin-img {
+  background-image: url(../images/coin01.png);
+}
+
+.coin02 .coin-img {
+  background-image: url(../images/coin02.png);
+}
+
+.coin03 .coin-img {
+  background-image: url(../images/coin03.png);
+}
+
+.coin04 .coin-img {
+  background-image: url(../images/coin04.png);
+}
+
+.coin05 .coin-img {
+  background-image: url(../images/coin05.png);
+}
+
+.coin06 .coin-img {
+  background-image: url(../images/coin06.png);
+}
+
+#hide-coin,
+#hide-coin .hide-coin img {
+  width: 100%;
+  height: 100%;
+}
+
+#hide-coin .hide-coin07 {
+  width: 100%;
 }
 
 .neon {
@@ -172,8 +222,7 @@ header {
 }
 
 .g-money {
-  padding-right: 3.2%;
-  padding-left: 6.2%;
+  padding-left: 5.2%;
 }
 
 .total-cash {
@@ -193,7 +242,7 @@ header {
 
 .finger.right {
   margin-top: -5%;
-  right: -37%;
+  right: -41%;
 }
 
 .total-money {
@@ -217,7 +266,7 @@ header {
 
 .reward-title {
   position: absolute;
-  top: 10px;
+  top: 6%;
   left: 50%;
   transform: translate(-50%);
   padding: 7px 18px 5px;
@@ -367,7 +416,11 @@ header {
   .reward-box p,
   .personnel { 
     font-size: 13px;
-  } 
+  }
+
+  .reward-title {
+    top: 2%;
+  }
 }
 
 .spark-show {
