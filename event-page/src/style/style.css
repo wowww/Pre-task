@@ -158,15 +158,42 @@ header {
   background-image: url(../images/coin06.png);
 }
 
-#hide-coin,
-#hide-coin .hide-coin img {
-  width: 100%;
-  height: 100%;
+#hide-coin {
+  overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-#hide-coin .hide-coin07 {
-  width: 100%;
+#hide-coin div {
+  z-index: 1;
+  position: absolute;
 }
+
+.hide-coin {
+
+}
+
+.coin-img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hide-coin07 {
+  top: 23%;
+  right: -9%;
+  padding-bottom: 28%;
+  width: 25%;
+}
+
+.hide-coin07 .coin-img {
+  background-image: url(../images/coin05.png);
+}
+
+
+
 
 .neon {
   padding-bottom: 66%;
@@ -590,6 +617,7 @@ header {
 }
 
 .popup-button {
+  z-index: 1;
   position: fixed; 
   bottom: 0; 
   width: 100%;
@@ -626,12 +654,6 @@ header {
   width: 100%;
 }
 
-.shadow {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.97);
-}
-
 .modal-top,
 .modal-bottom {
   position: relative;
@@ -645,9 +667,65 @@ header {
   border-bottom: 3px solid rgba(92, 35, 23, 0.6);
 }
 
+.modal-top, 
+.close {
+  top: -100%;
+  animation-name: modal-top;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  transition: all ease-in;
+}
+
+@keyframes modal-top {
+  0% {
+    top: -100%;
+  }
+
+  40% {
+    top: -1%;
+  }
+
+  60% {
+    top: -3%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
 .modal-bottom {
   background-image: url(../images/popup-bottom.png);
   border-top: 3px solid rgba(233, 233, 233, 0.2);
+}
+
+.modal-bottom,
+.remit-money {
+  bottom: -100%;
+  animation-name: modal-bottom;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  transition: all ease-in;
+} 
+
+@keyframes modal-bottom {
+  0% {
+    bottom: -100%;
+  }
+
+  40% {
+    bottom: -1%;
+  }
+
+  60% {
+    bottom: -3%;
+  }
+
+  100% {
+    bottom: 0;
+  }
 }
 
 .modal-top img,
