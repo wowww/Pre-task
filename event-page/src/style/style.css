@@ -371,21 +371,25 @@ header {
 }
 
 .spark-show {
+  padding-top: 10.7%;
   animation-name: spark;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  transition: all ease-in-out; /* custom */
-  transform: scale(1);
-  padding-top: 10.7%;
+  animation-delay: 1s;
+  opacity: 0;
+  transition: all ease-in-out;
   transform: scale(0.4);
 }
 
 @keyframes spark {
   0% {
+    opacity: 0;
     padding-top: 10.7%;
+    transform: scale(0.39);
   }
 
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
@@ -396,7 +400,7 @@ header {
 
 @keyframes dropthe {
   0% {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   100% {
