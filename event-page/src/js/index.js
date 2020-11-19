@@ -4,15 +4,18 @@ window.addEventListener('load', function(){
   spark.classList.add('spark-show');
 })
 
+const shadow = document.querySelector('.bg');
 const popupBtn = document.querySelector('.popup-button');
 const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('.close');
 
 popupBtn.addEventListener('click', e => {
+  modal.classList.add('bg');
   modal.classList.remove('hidden');
 })
 
 closeBtn.addEventListener('click', e => {
+  modal.classList.remove('bg');
   modal.classList.add('hidden');
 })
 
