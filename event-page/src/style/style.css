@@ -84,43 +84,43 @@ header {
  }
 
 .coin01 {
-  top: 9%;
   left: -2%;
+  margin-top: 36%;
   padding-bottom: 31%;
   width: 13%;
 }
 
 .coin02 {
-  top: 18.7%;
   left: 15%;
+  margin-top: 67%;
   padding-bottom: 13%;
   width: 10%;
 }
 
 .coin03 {
-  top: 25%;
   left: 0;
+  margin-top: 90%;
   padding-bottom: 13%;
   width: 100%;
 }
 
 .coin04 {
-  top: 18%;
   right: 6%;
+  margin-top: 59%;
   padding-bottom: 13%;
   width: 9%;
 }
 
 .coin05 {
-  top: 14%;
   right: 0%;
+  margin-top: 47%;
   padding-bottom: 23%;
   width: 17%;
 }
 
 .coin06 {
-  top: 23%;
   right: -9%;
+  margin-top: 90%;
   padding-bottom: 28%;
   width: 25%;
 }
@@ -437,6 +437,7 @@ header {
 }
 
 .social-icons {
+  z-index: 2;
   display: flex;
   position: absolute;
   top: 50%;
@@ -726,7 +727,7 @@ header {
 }
 
 .popup-button {
-  z-index: 1;
+  z-index: 2;
   position: fixed; 
   bottom: 0; 
   width: 100%;
