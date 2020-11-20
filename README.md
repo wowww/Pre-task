@@ -11,4 +11,4 @@
 - 페이지 URL: https://wowww.github.io/url/pre-task/event-page/index.html
 - [기능 구현 목록](https://github.com/wowww/Pre-task/projects/1)
 
-## 3. 사내 시스템 개발을 위한 UI 컴포넌트 개방
+## 3. 사내 시스템 개발을 위한 UI 컴포넌트 개발
