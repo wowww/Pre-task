@@ -4,8 +4,9 @@
 }
 
 header {
+  z-index: 2;
   position: relative;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.1);
 }
 
 .header-aria {
@@ -50,7 +51,7 @@ header {
 }
 
 .header-image {
-  top: 0;
+  top: -2px;
   right: 0;
   width: 112px;
 }
@@ -60,6 +61,7 @@ header {
 }
 
 .contents {
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
@@ -81,15 +83,11 @@ header {
   position: absolute;
  }
 
- .view-coin {
-   /* width: 100%; */
- }
-
 .coin01 {
   top: 9%;
-    left: -2%;
-    padding-bottom: 31%;
-    width: 13%;
+  left: -2%;
+  padding-bottom: 31%;
+  width: 13%;
 }
 
 .coin02 {
@@ -159,19 +157,15 @@ header {
 }
 
 #hide-coin {
-  overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #hide-coin div {
   z-index: 1;
   position: absolute;
-}
-
-.hide-coin {
-
+  height: 100%;
 }
 
 .coin-img {
@@ -181,19 +175,82 @@ header {
   background-repeat: no-repeat;
 }
 
+.hide-coin01 {
+  top: -37%;
+  right: 32%;
+  width: 13%;
+}
+
+.hide-coin02 {
+  top: -29%;
+  right: 45%;
+  padding-bottom: 22%;
+  width: 38%;
+}
+
+.hide-coin03 {
+  top: -20%;
+  right: -24%;
+  padding-bottom: 28%;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.hide-coin04 {
+  top: 15%;
+  right: 60%;
+  padding-bottom: 13%;
+  width: 9%;
+}
+
+.hide-coin05 {
+  top: 11.2%;
+  right: 51%;
+  padding-bottom: 23%;
+  width: 17%;
+}
+
+.hide-coin06 {
+  top: 18%;
+  right: 28%;
+  padding-bottom: 25%;
+  width: 30%;
+}
+
 .hide-coin07 {
   top: 23%;
   right: -9%;
   padding-bottom: 28%;
-  width: 25%;
+  width: 100%;
+}
+
+.hide-coin01 .coin-img {
+  background-image: url(../images/coin02.png);
+}
+
+.hide-coin02 .coin-img {
+  background-image: url(../images/coin05.png);
+}
+
+.hide-coin03 .coin-img {
+  background-image: url(../images/coin05.png);
+}
+
+.hide-coin04 .coin-img {
+  background-image: url(../images/coin04.png);
+}
+
+.hide-coin05 .coin-img {
+  background-image: url(../images/coin05.png);
+}
+
+.hide-coin06 .coin-img {
+  background-image: url(../images/coin02.png);
 }
 
 .hide-coin07 .coin-img {
   background-image: url(../images/coin05.png);
 }
-
-
-
 
 .neon {
   padding-bottom: 66%;
@@ -455,7 +512,7 @@ header {
   animation-name: spark;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
   opacity: 0;
   transition: all ease-in-out;
   transform: scale(0.4);
@@ -471,6 +528,51 @@ header {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+.coin-view {
+  z-index: 1;
+  opacity: 0;
+  animation-name: coin-view;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  transition: all ease-in-out;
+}
+
+@keyframes coin-view {
+  0% {
+    opacity: 100%;
+    top: -100%;
+  }
+
+  100% {
+    opacity: 100%;
+    top: 0%;
+  }
+}
+
+
+.coin-show {
+  z-index: 1;
+  opacity: 0;
+  animation-name: coin-show;
+  animation-duration: 2.4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  transition: all ease-in-out;
+}
+
+@keyframes coin-show {
+  0% {
+    opacity: 100%;
+    top: -100%;
+  }
+
+  100% {
+    opacity: 100%;
+    top: 150%;
   }
 }
 
@@ -613,9 +715,7 @@ header {
 .popup {
   position: absolute;
   top: 0;
-  left:0;
-  width: 100%;
-  height: 100%;
+  left:0; 
 }
 
 .bg {
