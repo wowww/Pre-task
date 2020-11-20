@@ -1,7 +1,12 @@
 window.addEventListener('load', function(){ 
   const spark = document.getElementById('spark');
+  const coin = document.getElementById('coin');
+  const hideCoin = document.getElementById('hide-coin');
 
   spark.classList.add('spark-show');
+  coin.classList.add('coin-view');
+  hideCoin.classList.add('coin-show');
+
 })
 
 const shadow = document.querySelector('.bg');
