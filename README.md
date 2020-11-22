@@ -12,3 +12,4 @@
 - [기능 구현 목록](https://github.com/wowww/Pre-task/projects/1)
 
 ## 3. 사내 시스템 개발을 위한 UI 컴포넌트 개발
+- [구현 목록] https://github.com/wowww/Pre-task/projects/2
