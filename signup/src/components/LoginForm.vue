@@ -111,11 +111,9 @@
           <input type="checkbox" id="switch" /><label for="switch"></label>
         </div>
       </div>
-
       <div class="join">
         <JoinButton type="button">가입하기</JoinButton>
       </div>
-
     </section>
   </div>
 </template>
@@ -155,6 +153,7 @@ h1 {
 
 h2 {
   text-align: left;
+  font-size: 1.5em;
 }
 
 button {
@@ -267,7 +266,7 @@ select {
 }
 
 .phone-number {
-  width: 30px;
+  width: 30%;
   min-width: 60px;
 }
 
