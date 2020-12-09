@@ -12,6 +12,7 @@
 - [기능 구현 목록](https://github.com/wowww/Pre-task/projects/1)
 
 ## 3. 사내 시스템 개발을 위한 UI 컴포넌트 개발
+- 기능 구현 url: https://wowww.github.io/promotion-page/  
 - [구현 목록](https://github.com/wowww/Pre-task/projects/2)
 
 파일 다운로드 후,   
